@@ -1,4 +1,3 @@
-# CCNA-Project
 **Requirements for Network:
 1. Use Cisco Packet Tracer to design and implement the network solution.
 2. Use hierarchical model providing redundancy at every layer i.e. two routers and two multilayer switches are expected to be used to provide redundancy.
@@ -610,62 +609,94 @@ do wr
 Base Network:172.16.1.0
 		
 				First Floor
--------------------------------------------------------------------------------
-Department   Network       Subnet Mask           Host Address     Broadcast
-	     Address       Range	                          Address
--------------------------------------------------------------------------------
-Sales &      172.16.1.0    255.255.255.128/25    172.16.1.1 to	  172.16.1.127
-Marketing					 172.16.1.126
 
-HR & 	     172.16.1.128  255.255.255.128/25	 172.16.1.129 to  172.16..1.255
-Logistics					 172.16.1.254
--------------------------------------------------------------------------------
+1] Department - Sales & Marketing - Network Address - 172.16.1.0 
+
+Department - Sales & Marketing - Subnet Mask Range - 255.255.255.128/25
+
+Department - Sales & Marketing - Host Address - 172.16.1.1 to 172.16.1.126
+
+Department - Sales & Marketing - Broadcast  Address - 172.16.1.127
+
+
+2] Department - HR & Logistics -  Network Address - 172.16.1.128
+
+Department - HR & Logistics -  Subnet Mask Range - 255.255.255.128/25
+
+Department - HR & Logistics - Host Address - 172.16.1.129 to  172.16.1.254
+
+Department - HR & Logistics - Broadcast  Address - 172.16..1.255
+172.16..1.255
+
+
 
 				
 			        Second Floor
---------------------------------------------------------------------------------
-Department   Network	   Subnet Mask		Host Address	  Broadcast
-	     Address				Range		  Address
---------------------------------------------------------------------------------
-Finance &    172.16.2.0	   255.255.255.128.25   172.16.2.1 to     172.16.2.127
-Accounts					172.16.2.126
 
-Admin &	     172.16.2.128  255.255.255.128/25   172.16.2.129 to	  172.16.2.255
-Public						172.16.2.254
-Relations
---------------------------------------------------------------------------------
+1] Department - Finance & Accounts - Network Address -   172.16.2.0
+
+Department - Finance & Accounts - Subnet Mask Range - 255.255.255.128.25
+
+Department - Finance & Accounts - Host Address - 172.16.2.1 to 172.16.2.126
+
+Department - Finance & Accounts - Broadcast  Address - 172.16.2.127
+
+
+2] Department - Admin & Public Relations - Network Address - 172.16.2.128 
+
+Department - Admin & Public Relations - Subnet Mask Range - 255.255.255.128/25 
+
+Department - Admin & Public Relations - Host Address -  172.16.2.129 to 172.16.2.254
+
+Department - Admin & Public Relations -	Broadcast  Address - 172.16.2.255
+
+
 
 			
 				Third Floor
---------------------------------------------------------------------------------
-Department   Network	   Subnet Mask		Host Address	  Broadcast
-	     Address				Range		  Address
---------------------------------------------------------------------------------
-ICT	     172.16.3.0	   255.255.255.128/25   172.16.3.1 to	  172.16.3.127
-						172.16.3.126
 
-Server 	     172.16.3.128  255.255.255.240/28   172.16.3.129 to   172.16.3.143
-Room						172.16.1.142
---------------------------------------------------------------------------------
+1] Department - ICT - Network Address -  172.16.3.0 
+
+Department - ICT - Subnet Mask Range - 255.255.255.128/25 
+
+Department - ICT - Host Address - 172.16.3.1 to 172.16.3.126
+
+Department - ICT - Broadcast  Address - 172.16.3.127
+
+
+2] Department - Server Room - Network Address - 172.16.3.128
+
+Department - Server Room - Subnet Mask Range - 255.255.255.240/28
+
+Department - Server Room - Host Address - 172.16.3.129 to 172.16.1.142
+
+Department - Server Room - Broadcast  Address - 172.16.3.143
+
+
 
 Between the Routers & Layer-3 Switches
 
---------------------------------------------------------------------------------
-No.	    Network	   Subnet Mask		Host Address	  Broadcast 
-	    Address				Range		  Address
---------------------------------------------------------------------------------
-R1-MLSW1    172.16.3.144   255.255.255.252      172.16.3.145 to	  172.16.3.147
-						172.16.3.146
+No. - R1-MLSW1 - Network Address - 172.16.3.144
+No. - R1-MLSW1 - Subnet Mask Range - 255.255.255.252
+No. - R1-MLSW1 - Host Address - 172.16.3.145 to 172.16.3.146
+No. - R1-MLSW1 - Broadcast  Address - 172.16.3.147
 
-R1-MLSW2    172.16.3.148   255.255.255.252      172.16.3.149 to	  172.16.3.151
-						172.16.3.149
+No. - R1-MLSW2 - Network Address - 172.16.3.148
+No. - R1-MLSW2 - Subnet Mask Range - 255.255.255.252 
+No. - R1-MLSW2 - Host Address - 172.16.3.149 to 172.16.3.150
+No. - R1-MLSW2 - Broadcast  Address - 172.16.3.151
 
-R2-MLSW1    172.16.3.152   255.255.255.252	172.16.3.153 to	  172.16.3.155
-						172.16.3.154
+No. - R1-MLSW1 - Network Address - 172.16.3.152
+No. - R1-MLSW1 - Subnet Mask Range -  255.255.255.252
+No. - R1-MLSW1 - Host Address - 172.16.3.153 to 172.16.3.154
+No. - R1-MLSW1 - Broadcast  Address - 172.16.3.155
 
-R2-MLSW2    172.16.3.156   255.255.255.252      172.16.3.157 to	  172.16.3.159
-						172.16.3.158
----------------------------------------------------------------------------------
+
+No. - R1-MLSW2 - Network Address -  172.16.3.156 
+No. - R1-MLSW2 - Subnet Mask Range - 255.255.255.252
+No. - R1-MLSW2 - Host Address -  172.16.3.157 to 172.16.3.158
+No. - R1-MLSW2 - Broadcast  Address - 172.16.3.159
+
 
 = Between the Routers & ISPs
 
